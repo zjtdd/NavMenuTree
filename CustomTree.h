@@ -15,27 +15,27 @@ public:
     void addItem(const QString &parentText, const QString &text);
     void setItemInfo(const QString &ItemText, const QString &info);
 
-    QColor bgColor() const;
-    void setBgColor(const QColor &bgColor);
+    QColor bgColor() const {return m_bgColor;}
+    void setBgColor(const QColor &bgColor) {m_bgColor = bgColor;}
 
-    QColor hoverBgColor() const;
-    void setHoverBgColor(const QColor &hoverBgColor);
+    QColor hoverBgColor() const {return m_hoverBgColor;}
+    void setHoverBgColor(const QColor &hoverBgColor) {m_hoverBgColor = hoverBgColor;}
 
-    QColor checkedBgColor() const;
-    void setCheckedBgColor(const QColor &checkedBgColor);
+    QColor checkedBgColor() const {return m_checkedBgColor;}
+    void setCheckedBgColor(const QColor &checkedBgColor) {m_checkedBgColor = checkedBgColor;}
 
-    QColor textColor() const;
-    void setTextColor(const QColor &textColor);
+    QColor textColor() const {return m_textColor;}
+    void setTextColor(const QColor &textColor) {m_textColor = textColor;}
 
-    QColor hoverTextColor() const;
-    void setHoverTextColor(const QColor &hoverTextColor);
+    QColor hoverTextColor() const {return m_hoverTextColor;}
+    void setHoverTextColor(const QColor &hoverTextColor) {m_hoverTextColor = hoverTextColor;}
 
-    QColor checkedTextColor() const;
-    void setcheckedTextColor(const QColor &checkedTextColor);
+    QColor checkedTextColor() const {return m_checkedTextColor;}
+    void setcheckedTextColor(const QColor &checkedTextColor) {m_checkedTextColor = checkedTextColor;}
 
     QString infoStr(const QModelIndex &index);
-    QColor lineColor() const;
-    void setLineColor(const QColor &lineColor);
+    QColor lineColor() const {return m_lineColor;}
+    void setLineColor(const QColor &lineColor) {m_lineColor = lineColor;}
 
 
 private:

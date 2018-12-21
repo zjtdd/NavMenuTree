@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         Form.cpp \
-    CustomTree.cpp
+    CustomTree.cpp \
+    CustomTreeDelegate.cpp
 
 HEADERS += \
         Form.h \
-    CustomTree.h
+    CustomTree.h \
+    CustomTreeDelegate.h
 
 FORMS += \
         Form.ui
