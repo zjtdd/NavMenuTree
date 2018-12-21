@@ -27,12 +27,14 @@ SOURCES += \
         main.cpp \
         Form.cpp \
     CustomTree.cpp \
-    CustomTreeDelegate.cpp
+    CustomTreeDelegate.cpp \
+    CustomTreeWidget.cpp
 
 HEADERS += \
         Form.h \
     CustomTree.h \
-    CustomTreeDelegate.h
+    CustomTreeDelegate.h \
+    CustomTreeWidget.h
 
 FORMS += \
         Form.ui

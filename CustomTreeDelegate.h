@@ -1,20 +1,25 @@
 ﻿#ifndef CUSTOMTREEDELEGATE_H
 #define CUSTOMTREEDELEGATE_H
 
-#include "CustomTree.h"
+#include "CustomTreeWidget.h"
 
 #include <QObject>
 #include <QStyledItemDelegate>
+#include <QPainter>
+#include <QTreeView>
+//#include <QStandardItemModel>
 
 class CustomTreeDelegate : public QStyledItemDelegate
 {
     Q_OBJECT
 
 public:
-    CustomTreeDelegate(CustomTree *view, QObject *parent );
+    CustomTreeDelegate(CustomTreeWidget *view, QObject *parent );
+
+    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const;
 
 private:
-    CustomTree *m_view;
+    CustomTreeWidget *m_view;
     QStandardItemModel *m_model;
 
 };
