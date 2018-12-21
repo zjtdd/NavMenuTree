@@ -7,7 +7,6 @@
 #include <QStyledItemDelegate>
 #include <QPainter>
 #include <QTreeView>
-//#include <QStandardItemModel>
 
 class CustomTreeDelegate : public QStyledItemDelegate
 {

@@ -2,6 +2,7 @@
 
 #include "CustomTreeDelegate.h"
 
+
 #include <QDebug>
 
 CustomTreeWidget::CustomTreeWidget(QWidget *parent)
